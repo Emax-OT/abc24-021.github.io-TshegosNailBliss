@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+    <div class="nav-arrows">
+      <button class="nav-btn" onclick="window.history.back()" title="Go Back">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+      <button class="nav-btn" onclick="window.history.forward()" title="Go Forward">
+        <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+
+<header>
+<nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+            T.N.B
+        </a>
+    <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+    </button>
+    <ul class="navbar-links d-flex flex-wrap gap-3 mb-0 list-unstyled" id="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+            <a href="feedback.html" class="cta-btn-top-right">
+                <i class="bi bi-envelope-fill me-2"></i>
+                Let's hear from you!
+            </a>
+        </li>
+    </ul>
+</nav>
+</header>
+
+    <h1 class="home-header">Tshego’s Nail Bliss</h1>
+    <p class="home-header-tagline">Elevate your look, Tshego's way.</p>
+
+<!-- HERO BANNER -->
+<section class="hero-banner">
+    <div class="container-hero">
+        <h1 class="hero-title">
+            Welcome to Tshego’s Nail Bliss
+        </h1>
+        <p class="hero-subtitle">
+            Kiss brittle nails goodbye and treat yourself to vibrant, lasting beauty.<br>
+            Discover Botswana’s favorite spot for creative, healthy nails!
+        </p>
+        <a href="booking.html" class="btn btn-warning btn-lg shadow-lg px-5 py-3 fw-bold hero-cta">
+            <i class="bi bi-calendar-check me-2"></i>
+            Book Your Appointment
+        </a>
+    </div>
+</section>
+
+    <!-- NEW COMER SPECIAL OFFER -->
+<section class="new-comer-special-offers">
+    <div class="special-offer-banner">
+        <span class="offer-icon"></span>
+        <div>
+            <h2>Special Offer for First-Time Clients</h2>
+            <p class="offer-highlight">Enjoy <strong>10% off</strong> your first service! <span class="offer-icon"></span></p>
+            <p class="promo-code">Use promo code: <strong>WELCOME10</strong> when booking your appointment.</p>
+        </div>
+    </div>
+</section>
+    
+    <!-- SPECIAL OFFERS -->
+<section class="special-offers-1">
+    <h2>Special Offers Just for You!</h2>
+    <div class="offers-container">
+        <div class="offer">
+            <span class="offer-emoji">✨</span>
+            <h3>New Client Discount</h3>
+            <p>Enjoy <strong>10% off</strong> your first appointment!</p>
+        </div>
+        <div class="offer">
+            <span class="offer-emoji">🎂</span>
+            <h3>Birthday Special</h3>
+            <p>Get <strong>15% off</strong> during your birthday week!</p>
+        </div>
+        <div class="offer">
+            <span class="offer-emoji">💅</span>
+            <h3>Combo Deals</h3>
+            <p>Book a <strong>Manicure + Pedicure</strong> & save more!</p>
+        </div>
+        <div class="offer">
+            <span class="offer-emoji">👯‍♀️</span>
+            <h3>Refer a Friend</h3>
+            <p>Bring a friend & <strong>both get 10% off</strong> your next visit!</p>
+        </div>
+    </div>
+</section>
+
+    <!-- SERVICES PREVIEW -->
+<section class="services-preview-home">
+    <h2>Our Services Overview</h2>
+    <section class="services">
+    <div class="service-card popular">
+        <img src="images/gel manicure/gel-manicure-1.jpg" alt="Gel Manicure" class="service-img">
+        <div class="service-content">
+            <div class="service-header">
+                <h2>Gel Manicure</h2>
+                <span class="badge-popular">Popular</span>
+            </div>
+            <p class="service-desc">Long-lasting, glossy nails with vibrant colors.</p>
+            <div class="service-meta">
+                <span class="service-price">P100</span>
+                <span class="service-discount">15% Off</span>
+            </div>
+            <a href="booking.html" class="btn btn-card">Book Now</a>
+        </div>
+    </div>
+    <div class="service-card">
+        <img src="images/french manicure/french-manicure-3.jpg" alt="French Manicure" class="service-img">
+        <div class="service-content">
+            <div class="service-header">
+                <h2>French Manicure</h2>
+            </div>
+            <p class="service-desc">Classic, elegant, and always in style.</p>
+            <div class="service-meta">
+                <span class="service-price">P120</span>
+            </div>
+            <a href="booking.html" class="btn btn-card">Book Now</a>
+        </div>
+    </div>
+    <div class="service-card">
+        <img src="images/gel pedicure/gel-pedicure-2.jpg" alt="Gel Pedicure" class="service-img">
+        <div class="service-content">
+            <div class="service-header">
+                <h2>Gel Pedicure</h2>
+            </div>
+            <p class="service-desc">Shiny, durable toenails for weeks of confidence.</p>
+            <div class="service-meta">
+                <span class="service-price">P110</span>
+            </div>
+            <a href="booking.html" class="btn btn-card">Book Now</a>
+        </div>
+    </div>
+</section>
+    <a href="services.html" class="btn">Browse More</a>
+
+<section class="gallery-preview">
+    <h2>Just A Glimpse Of Our Many Stunning Nail Designs</h2>
+    <p class="gallery-tagline">Browse some of our favorite creations—see more in our full gallery!</p>
+    <div class="gallery-preview-grid">
+        <div class="preview-item">
+            <img src="images/book-banner-1.jpg" alt="Elegant French Tips">
+            <span class="gallery-caption">Elegant French Tips</span>
+        </div>
+        <div class="preview-item">
+            <img src="images/book-banner-2.jpg" alt="Bold Glitter Ombre">
+            <span class="gallery-caption">Bold Glitter Ombre</span>
+        </div>
+        <div class="preview-item">
+            <img src="images/book-banner-3.jpg" alt="Classic Nude">
+            <span class="gallery-caption">Classic Nude</span>
+        </div>
+        <div class="preview-item">
+            <img src="images/french-manicure-1.jpg" alt="Floral Art">
+            <span class="gallery-caption">Floral Art</span>
+        </div>
+    </div>
+    <a href="gallery.html" class="btn">Adore More</a>
+</section>
+
+        <!-- Blog Preview Section -->
+    <section class="blog-preview">
+        <h2>From Our Blog</h2>
+        <div class="blog-preview-cards">
+            <div class="blog-card">
+                <img src="images/blog1.jpg" alt="How to Prevent Nail Breakage">
+                <h3>How to Prevent Nail Breakage and Splitting</h3>
+                <p>Learn simple habits that keep your nails strong and unbreakable.</p>
+                <a href="blog-post1.html" class="btn">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="images/blog2.jpg" alt="Daily Nail Care Routine">
+                <h3>Daily Nail Care Routine for Healthier Hands</h3>
+                <p>A step-by-step guide to maintaining soft hands and polished nails every day.</p>
+                <a href="blog-post2.html" class="btn">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="images/blog3.jpg" alt="Best Foods for Stronger Nails">
+                <h3>Best Foods for Stronger Nails</h3>
+                <p>Discover what to eat to boost nail growth and reduce brittleness naturally.</p>
+                <a href="blog-post3.html" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    
+<section class="why-choose-us">
+    <h2>Why Choose Tshego’s Nail Bliss?</h2>
+    <p class="why-tagline">Experience the difference—where quality, care, and creativity meet.</p>
+    <div class="reasons-container">
+        <div class="reason-box">
+            <span class="reason-icon">✨</span>
+            <h3>Premium Quality</h3>
+            <p>We use only high-end, long-lasting products to give your nails the care they deserve.</p>
+        </div>
+        <div class="reason-box">
+            <span class="reason-icon">💖</span>
+            <h3>Personalized Experience</h3>
+            <p>Every client is unique — we take time to understand your style and needs.</p>
+        </div>
+        <div class="reason-box">
+            <span class="reason-icon">🧼</span>
+            <h3>Clean & Safe</h3>
+            <p>Our salon is spotless and we follow the strictest hygiene practices.</p>
+        </div>
+        <div class="reason-box">
+            <span class="reason-icon">🌟</span>
+            <h3>Passion & Talent</h3>
+            <p>Run by a young entrepreneur with a true love for beauty and self-expression.</p>
+        </div>
+    </div>
+</section>
+        <!-- Meet Tshego Section -->
+    <section class="meet-tshego">
+        <h2>Meet Tshego</h2>
+        <div class="meet-tshego-content">
+            <img src="images/tshego.png" alt="Tshego, Owner of Nail Bliss" class="tshego-photo">
+            <div class="tshego-bio">
+                <p>
+                    Tshegofatso Obeditse, affectionately known as Tshego, is a passionate entrepreneur and creative spirit from Gaborone, Botswana. From a young age, Tshego was drawn to the world of beauty and self-expression, often experimenting with colors and designs on her own nails and those of friends and family.
+                </p>
+                <p>
+                    Her journey has been one of resilience and determination, balancing studies, personal growth, and a dream to build something uniquely her own.
+                    Inspired by her love for artistry and a desire to empower others to feel confident and beautiful, Tshego founded Tshego’s Nail Bliss. 
+                    Today, her studio is a welcoming space where creativity flourishes and every client is treated to a personalized, uplifting experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-cta">
+        <h2>Book Your Appointment</h2>
+        <p>Get the perfect nails today! Schedule your session with us.</p>
+        <a href="booking.html" class="btn">Book Now</a>
+    </section>
+
+ <footer>
+        <div class="footer-contact">
+            <p><strong>Visit Us:</strong> Gaborone, Botswana</p>
+            <p><strong>Call Us:</strong> +267 74 843 135</p>
+            <p><strong>Email:</strong> <a id="email" href="mailto:tshegofatsoobeditse@gmail.com">tshegofatsoobeditse@gmail.com</a></p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="services.html">Services</a> |
+            <a href="booking.html">Booking</a> |
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100072119332161" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/his_prettiest_pumpkin/" target="_blank">Instagram</a>
+        </div>
+        <div class="business-hours">
+            <p><strong>Opening Hours:</strong></p>
+            <p>Mon - Fri: 9 AM - 6 PM</p>
+            <p>Sat: 10 AM - 4 PM</p>
+            <p>Sun: Closed</p>
+        </div>
+        <div class="newsletter">
+            <p>Subscribe to get exclusive offers & nail care tips!</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-legal">
+            <p>© 2025 Tshego’s Nail Bliss. All Rights Reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+        </div>
+    </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>

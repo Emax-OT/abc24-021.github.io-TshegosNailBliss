@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+    <div class="nav-arrows">
+      <button class="nav-btn" onclick="window.history.back()" title="Go Back">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+      <button class="nav-btn" onclick="window.history.forward()" title="Go Forward">
+        <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+
+<header>
+<nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+            T.N.B
+        </a>
+    <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+    </button>
+    <ul class="navbar-links d-flex flex-wrap gap-3 mb-0 list-unstyled" id="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+            <a href="feedback.html" class="cta-btn-top-right">
+                <i class="bi bi-envelope-fill me-2"></i>
+                Let's hear from you!
+            </a>
+        </li>
+    </ul>
+</nav>
+</header>
+
+    <h1 class="home-header">Book Your Bliss</h1>
+
+
+    <!-- NEW COMER SPECIAL OFFER -->
+<section class="new-comer-special-offers">
+    <div class="special-offer-banner">
+        <span class="offer-icon"></span>
+        <div>
+            <h2>Special Offer for First-Time Clients</h2>
+            <p class="offer-highlight">Enjoy <strong>10% off</strong> your first service! <span class="offer-icon"></span></p>
+            <p class="promo-code">Use promo code: <strong>WELCOME10</strong> when booking your appointment.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- SPECIAL OFFERS -->
+<section class="special-offers-1">
+    <h2>Special Offers Just for You!</h2>
+    <div class="offers-container">
+        <div class="offer">
+            <span class="offer-emoji">✨</span>
+            <h3>New Client Discount</h3>
+            <p>Enjoy <strong>10% off</strong> your first appointment!</p>
+        </div>
+        <div class="offer">
+            <span class="offer-emoji">🎂</span>
+            <h3>Birthday Special</h3>
+            <p>Get <strong>15% off</strong> during your birthday week!</p>
+        </div>
+        <div class="offer">
+            <span class="offer-emoji">💅</span>
+            <h3>Combo Deals</h3>
+            <p>Book a <strong>Manicure + Pedicure</strong> & save more!</p>
+        </div>
+        <div class="offer">
+            <span class="offer-emoji">👯‍♀️</span>
+            <h3>Refer a Friend</h3>
+            <p>Bring a friend & <strong>both get 10% off</strong> your next visit!</p>
+        </div>
+    </div>
+</section>
+
+    <!-- POLICIES -->
+    <section class="policies">
+        <h2>Policies & Guidelines</h2>
+        <div class="policy">
+            <h3>📅 Booking & Appointments</h3>
+            <p>All appointments must be booked at least <strong>24 hours in advance</strong>. A confirmation message will be sent once your booking is approved.</p>
+        </div>
+        <div class="policy">
+            <h3>⏳ Late Arrivals</h3>
+            <p>Please arrive on time. A <strong>10-minute grace period</strong> is allowed, after which your appointment may be canceled or rescheduled.</p>
+        </div>
+        <div class="policy">
+            <h3>🚫 Cancellations & Rescheduling</h3>
+            <p>Clients must cancel or reschedule at least <strong>12 hours before</strong> the appointment. Last-minute cancellations may require a deposit for future bookings.</p>
+        </div>
+        <div class="policy">
+            <h3>💰 Payments</h3>
+            <p>We accept <strong>cash and mobile money payments</strong>. A deposit may be required for some services.</p>
+        </div>
+        <div class="policy">
+            <h3>🧼 Hygiene & Nail Preparation</h3>
+            <p>Please arrive with clean, polish-free nails. If you need a <strong>removal service</strong>, let us know in advance.</p>
+        </div>
+        <div class="policy">
+            <h3>❌ No Refunds</h3>
+            <p>All services are final. If there’s an issue, kindly report it within <strong>24 hours</strong> of booking, and we’ll do our best to assist.</p>
+        </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section class="booking">
+        <h2>Book Your Appointment</h2>
+        <p>Secure your spot for a pampering nail session.</p>
+        <form id="booking-form" action="https://formspree.io/f/xvgajgwr" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="gel-nails">Gel Nails</option>
+                <option value="acrylic-nails">Acrylic Nails</option>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="gel-manicure">Gel Manicure</option>
+                <option value="french-manicure">French Manicure</option>
+                <option value="gel-pedicure">Gel Pedicure</option>
+                <option value="gel-extensions">Gel Extensions</option>
+                <option value="polygel-nails">Polygel Nails</option>
+                <option value="nail-art">Nail Art</option>
+                <option value="3d-nail-art">3D Nail Art</option>
+                <option value="cuticle-treatment">Cuticle Treatment</option>
+            </select>
+
+            <label for="message">Special Requests:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+          <div id="success-message" class="hidden">
+           <p>✅ Your appointment has been successfully booked!</p>
+</div>
+    </section>
+
+    <!-- PRICING TABLE -->
+    <section class="pricing">
+        <h2>Our Pricing</h2>
+        <div class="pricing-table">
+            <div class="pricing-item">
+                <h3>Gel Manicure</h3>
+                <p>Long-lasting glossy nails.</p>
+                <span class="price">P100</span>
+            </div>
+            <div class="pricing-item">
+                <h3>French Manicure</h3>
+                <p>Classic and elegant look.</p>
+                <span class="price">P120</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Gel Pedicure</h3>
+                <p>Shiny and durable toenails.</p>
+                <span class="price">P110</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Gel Extensions</h3>
+                <p>Strong and natural-looking extensions.</p>
+                <span class="price">P150</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Polygel Nails</h3>
+                <p>Lightweight yet strong nail enhancements.</p>
+                <span class="price">P180</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Acrylic Nails</h3>
+                <p>Durable and stylish nail extensions.</p>
+                <span class="price">P170</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Classic Manicure</h3>
+                <p>Hydrating and strengthening hand treatment.</p>
+                <span class="price">P90</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Classic Pedicure</h3>
+                <p>Relax and rejuvenate your feet.</p>
+                <span class="price">P100</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Nail Art</h3>
+                <p>Custom designs to match your style.</p>
+                <span class="price">P50+</span>
+            </div>
+            <div class="pricing-item">
+                <h3>3D Nail Art</h3>
+                <p>Textured, eye-catching nail designs.</p>
+                <span class="price">P80+</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Cuticle Treatment</h3>
+                <p>Hydration and nourishment for healthy nails.</p>
+                <span class="price">P60</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Paraffin Wax Treatment</h3>
+                <p>Deep hydration for soft, smooth hands.</p>
+                <span class="price">P130</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Visit Us:</strong> Gaborone, Botswana</p>
+            <p><strong>Call Us:</strong> +267 74 843 135</p>
+            <p><strong>Email:</strong> <strong><a id="email" href="mailto:tshegofatsoobeditse@gmail.com">tshegofatsoobeditse@gmail.com</a></strong></p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="services.html">Services</a> |
+            <a href="booking.html">Booking</a> |
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100072119332161" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/his_prettiest_pumpkin/" target="_blank">Instagram</a>
+        </div>
+        <div class="business-hours">
+            <p><strong>Opening Hours:</strong></p>
+            <p>Mon - Fri: 9 AM - 6 PM</p>
+            <p>Sat: 10 AM - 4 PM</p>
+            <p>Sun: Closed</p>
+        </div>
+        <div class="newsletter">
+            <p>Subscribe to get exclusive offers & nail care tips!</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-legal">
+            <p>© 2025 Tshego’s Nail Bliss. All Rights Reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
